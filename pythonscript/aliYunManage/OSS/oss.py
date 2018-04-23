@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# 以下代码展示了基本的文件备份，删除和上传。
-# 以杭州区域为例，Endpoint可以是：
+# 以下代码实现文件的备份，删除和上传。
+# Endpoint可以是：
 #   http://oss-cn-hangzhou.aliyuncs.com
 #   https://oss-cn-hangzhou.aliyuncs.com
 # 分别以HTTP、HTTPS协议访问。
