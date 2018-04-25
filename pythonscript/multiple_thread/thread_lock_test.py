@@ -1,4 +1,6 @@
 #! -*- coding: utf-8 -*-
+# 使用thread建立3个线程，创建3个lock，每个线程干活后，释放各自的lock
+#主进程轮询查看3个锁的状态，所有锁release后，主进程退出
 
 import _thread
 from time import sleep, time
@@ -31,7 +33,7 @@ def main():
 
     for i in nloops:
         # 在线程结束的时候，线程要自己去做解锁操作
-        # 当前循环只是坐在那一直等(达到暂停主 线程的目的)，直到两个锁都被解锁为止才继续运行。
+        # 当前循环只是坐在那一直等(达到暂停主 线程的目的)，直到两个锁都被解锁为止才跳出循环。
         while locks[i].locked(): pass
 
     print('all DONE at:', time())
