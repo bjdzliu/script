@@ -1,6 +1,7 @@
 import subprocess,sys,os,re
 """
 exec : . set_swarm_env.sh ; python collect.py {appname}
+collect a app's docker log from cluster and transfer to local
 
 """
 container=[]
