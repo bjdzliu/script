@@ -1,5 +1,5 @@
 import json
-for line in open('ceshi'):
+for line in open('log.txt'):
     # print line.split(',{')[0]
     # print '{'+ line.split(',{')[1]
     column1= line.split(',{')[0]

@@ -1,4 +1,4 @@
-
+#! -*- coding: utf-8 -*-
 from threading import Thread
 def hello(name):
     print('hello world'+' '+name)
@@ -7,10 +7,10 @@ t = Thread(target=hello, args=("dz",))
 t.start()
 
 
-
 # 创建一个类，必须要继承Thread
 class MyThread(Thread):
     # 继承Thread的类，需要实现run方法，线程就是从这个方法开始的
+
     def run(self):
         # 具体的逻辑
         hello(self.parameter1)
