@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     autonumber
     participant U as AKS Pod (Backup Script)
@@ -28,3 +29,4 @@ sequenceDiagram
     Note over B: Files stored under<br/>confluence-backups/pages/{page_name}/{date}/
     U-->>U: Write log + status summary
     Note over U: Job completed successfully
+```
